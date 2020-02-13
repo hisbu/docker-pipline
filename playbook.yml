@@ -1,11 +1,5 @@
 - hosts : server
   tasks:
-    - name: install python-docker centos
-      yum:
-        name: python-docker
-        state: present
-      when:
-      - ansible_distribution == "CentOS"
     - name: install python-docker ubuntu
       apt:
         name: python-docker
