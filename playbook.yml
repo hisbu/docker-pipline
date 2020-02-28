@@ -1,6 +1,6 @@
 - hosts : server
   tasks:
-    - name: install python-docker ubuntu
+    - name: install python-docker ubuntu16
       apt:
         name: python-docker
         state: present
